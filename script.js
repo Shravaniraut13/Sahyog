@@ -1,10 +1,6 @@
 // Sahyog JavaScript
 
 console.log("Sahyog website loaded successfully");
-// =====================================================
-// SAHYOG - FORM VALIDATION
-// =====================================================
-
 
 // ================= LOGIN VALIDATION =================
 
