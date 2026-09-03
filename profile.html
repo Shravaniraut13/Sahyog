@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sahyog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">❤️ Sahyog</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="donor-dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="login.html">Logout</a>
+    </div>
+</nav>
+
+<section class="form-section">
+
+    <div class="form-container">
+
+        <h1>My Profile</h1>
+        <p class="form-subtitle">View and update your profile information</p>
+
+        <form id="profileForm">
+
+            <div class="form-group">
+                <label for="profileName">Full Name / Organization Name</label>
+                <input type="text" id="profileName"
+                       placeholder="Enter your name" required>
+                <small class="error" id="profileNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="profileEmail">Email Address</label>
+                <input type="email" id="profileEmail"
+                       placeholder="Enter your email" required>
+                <small class="error" id="profileEmailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePhone">Phone Number</label>
+                <input type="tel" id="profilePhone"
+                       placeholder="Enter 10-digit phone number"
+                       maxlength="10" required>
+                <small class="error" id="profilePhoneError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="profileAddress">Address</label>
+                <textarea id="profileAddress" rows="4"
+                          placeholder="Enter your address" required></textarea>
+                <small class="error" id="profileAddressError"></small>
+            </div>
+
+            <button type="submit" class="form-btn">
+                Update Profile
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Sahyog - Smart Food Donation & NGO Management System</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

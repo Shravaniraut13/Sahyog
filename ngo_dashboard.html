@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NGO Dashboard - Sahyog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            ❤️ Sahyog
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ngo-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>NGO Dashboard</h1>
+
+                <p>
+                    Find available food and manage your rescues.
+                </p>
+
+            </div>
+
+            <a href="#available" class="btn primary-btn">
+                Find Food
+            </a>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="dashboard-stats">
+
+            <div class="dashboard-card">
+
+                <h3>Available Food</h3>
+
+                <strong>8</strong>
+
+                <p>Listings nearby</p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>My Claims</h3>
+
+                <strong>7</strong>
+
+                <p>Total claims</p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>In Progress</h3>
+
+                <strong>3</strong>
+
+                <p>Food being collected</p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Completed</h3>
+
+                <strong>4</strong>
+
+                <p>Successful rescues</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- AVAILABLE FOOD -->
+
+        <div class="dashboard-section" id="available">
+
+            <h2>Available Food</h2>
+
+
+            <div class="food-grid">
+
+
+                <div class="food-card">
+
+                    <h3>Rice & Dal</h3>
+
+                    <p>
+                        🍽 Quantity: 20 Meals
+                    </p>
+
+                    <p>
+                        📍 Location: Kalyan
+                    </p>
+
+                    <p>
+                        📅 Available Until: 03 Sep 2026
+                    </p>
+
+                    <button class="form-btn claim-btn">
+                        Claim Food
+                    </button>
+
+                </div>
+
+
+                <div class="food-card">
+
+                    <h3>Vegetable Biryani</h3>
+
+                    <p>
+                        🍽 Quantity: 15 Meals
+                    </p>
+
+                    <p>
+                        📍 Location: Dombivli
+                    </p>
+
+                    <p>
+                        📅 Available Until: 03 Sep 2026
+                    </p>
+
+                    <button class="form-btn claim-btn">
+                        Claim Food
+                    </button>
+
+                </div>
+
+
+                <div class="food-card">
+
+                    <h3>Fresh Bread</h3>
+
+                    <p>
+                        🍽 Quantity: 30 Packets
+                    </p>
+
+                    <p>
+                        📍 Location: Thane
+                    </p>
+
+                    <p>
+                        📅 Available Until: 04 Sep 2026
+                    </p>
+
+                    <button class="form-btn claim-btn">
+                        Claim Food
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- MY CLAIMS -->
+
+        <div class="dashboard-section">
+
+            <h2>My Claims</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Food</th>
+                            <th>Quantity</th>
+                            <th>Donor</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Rice & Dal</td>
+
+                            <td>20 Meals</td>
+
+                            <td>ABC Restaurant</td>
+
+                            <td>
+                                <span class="status claimed">
+                                    Claimed
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="small-btn">
+                                    View
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Bread</td>
+
+                            <td>30 Packets</td>
+
+                            <td>XYZ Bakery</td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="small-btn">
+                                    Feedback
+                                </button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Sahyog - Smart Food Donation & NGO Management System
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

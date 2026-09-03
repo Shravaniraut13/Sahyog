@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donor Dashboard - Sahyog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            ❤️ Sahyog
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="donor-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Donor Dashboard</h1>
+
+                <p>
+                    Welcome back! Manage your food donations here.
+                </p>
+            </div>
+
+            <a href="#donate" class="btn primary-btn">
+                + Donate Food
+            </a>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="dashboard-stats">
+
+            <div class="dashboard-card">
+                <h3>Total Donations</h3>
+                <strong>12</strong>
+                <p>Food listings created</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Available</h3>
+                <strong>4</strong>
+                <p>Waiting for NGO</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Claimed</h3>
+                <strong>6</strong>
+                <p>Food claimed by NGOs</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Completed</h3>
+                <strong>2</strong>
+                <p>Successfully rescued</p>
+            </div>
+
+        </div>
+
+
+        <!-- RECENT DONATIONS -->
+
+        <div class="dashboard-section">
+
+            <h2>My Recent Donations</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Food Item</th>
+                            <th>Quantity</th>
+                            <th>Expiry</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Rice & Dal</td>
+                            <td>20 Meals</td>
+                            <td>03 Sep 2026</td>
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+                            <td>
+                                <button class="small-btn">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Vegetable Biryani</td>
+                            <td>15 Meals</td>
+                            <td>03 Sep 2026</td>
+                            <td>
+                                <span class="status claimed">
+                                    Claimed
+                                </span>
+                            </td>
+                            <td>
+                                <button class="small-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Bread</td>
+                            <td>30 Packets</td>
+                            <td>04 Sep 2026</td>
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+                            <td>
+                                <button class="small-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- DONATE FOOD FORM -->
+
+        <div class="dashboard-section" id="donate">
+
+            <h2>Donate Food</h2>
+
+            <form id="donationForm" class="dashboard-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="foodName">
+                            Food Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="foodName"
+                            placeholder="e.g. Rice, Bread"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            placeholder="Enter quantity"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="foodType">
+                            Food Type
+                        </label>
+
+                        <select id="foodType" required>
+
+                            <option value="">
+                                Select food type
+                            </option>
+
+                            <option value="cooked">
+                                Cooked Food
+                            </option>
+
+                            <option value="packed">
+                                Packed Food
+                            </option>
+
+                            <option value="bakery">
+                                Bakery
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="expiry">
+                            Expiry Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="expiry"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Pickup Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter pickup location"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="4"
+                        placeholder="Describe the food..."
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="form-btn">
+                    Submit Donation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Sahyog - Smart Food Donation & NGO Management System
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

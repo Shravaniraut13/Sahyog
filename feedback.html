@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Sahyog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">❤️ Sahyog</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="ngo-dashboard.html">Dashboard</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Logout</a>
+    </div>
+</nav>
+
+<section class="form-section">
+
+    <div class="form-container">
+
+        <h1>Give Feedback</h1>
+
+        <p class="form-subtitle">
+            Share your experience with Sahyog
+        </p>
+
+        <form id="feedbackForm">
+
+            <div class="form-group">
+
+                <label for="feedbackSubject">Subject</label>
+
+                <input type="text" id="feedbackSubject"
+                       placeholder="Enter feedback subject" required>
+
+                <small class="error" id="feedbackSubjectError"></small>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="rating">Rating</label>
+
+                <select id="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="5">★★★★★ - Excellent</option>
+                    <option value="4">★★★★ - Very Good</option>
+                    <option value="3">★★★ - Good</option>
+                    <option value="2">★★ - Average</option>
+                    <option value="1">★ - Poor</option>
+                </select>
+
+                <small class="error" id="ratingError"></small>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="feedbackMessage">Your Feedback</label>
+
+                <textarea id="feedbackMessage"
+                          rows="6"
+                          placeholder="Write your feedback here..."
+                          required></textarea>
+
+                <small class="error" id="feedbackMessageError"></small>
+
+            </div>
+
+            <button type="submit" class="form-btn">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Sahyog - Smart Food Donation & NGO Management System</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
