@@ -16,6 +16,7 @@ Notifications
 Responsive User Interface
 Form Validation
 MySQL Database Integration
+
 Technologies Used
 Frontend: HTML5, CSS3, JavaScript
 Backend: PHP
